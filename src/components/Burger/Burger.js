@@ -1,14 +1,14 @@
 import React from 'react'
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient'
-import Aux from '../../hoc/Aux'
+import classes from './Burger.css'
 
 const burger=()=> (
-    <Aux>
+    <div className={classes.Burger}>
     <BurgerIngredient type="bread-top"/>
     <BurgerIngredient type="salad"/>
     <BurgerIngredient type="cheese"/>
     <BurgerIngredient type="meat"/>
     <BurgerIngredient type="bread-bottom"/>
-    </Aux>);
+    </div>);
 
 export default burger;
